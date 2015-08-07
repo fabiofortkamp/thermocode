@@ -1,0 +1,7 @@
+*~
+output/
+plugins/
+themes/
+*.pid
+content
+__pycache__/
