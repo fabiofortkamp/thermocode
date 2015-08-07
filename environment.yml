@@ -1,0 +1,27 @@
+name: blog
+dependencies:
+- ipython=3.2.1=py34_0
+- markdown=2.6.2=py34_0
+- openssl=1.0.1k=1
+- pip=7.1.0=py34_0
+- python=3.4.3=0
+- python.app=1.2=py34_4
+- readline=6.2=2
+- setuptools=18.0.1=py34_0
+- sqlite=3.8.4.1=1
+- tk=8.5.18=0
+- xz=5.0.5=0
+- zlib=1.2.8=0
+- pip:
+  - blinker==1.4
+  - docutils==0.12
+  - feedgenerator==1.7
+  - jinja2==2.8
+  - markupsafe==0.23
+  - pelican==3.6.2
+  - pygments==2.0.2
+  - python-dateutil==2.4.2
+  - pytz==2015.4
+  - six==1.9.0
+  - unidecode==0.4.18
+
