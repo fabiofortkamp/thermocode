@@ -48,3 +48,13 @@ TAG_URL = 'blog/tag/{slug}'
 TAG_SAVE_AS = 'blog/tag/{slug}.html'
 
 THEME = 'pelican-bootstrap3/'
+
+DISPLAY_CATEGORIES_ON_MENU = False
+
+SOCIAL = (('@fabiofortkamp', 'http://twitter.com/fabiofortkamp', 'twitter'),
+          ('My Github page', 'http://github.com/fabiofortkamp', 'github'),
+          ('Meu blog em português', 'http://fabiofortkamp.com/', 'pencil'))
+
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_CATEGORIES_ON_SIDEBAR = True
+
