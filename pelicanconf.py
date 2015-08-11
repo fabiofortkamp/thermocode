@@ -6,6 +6,17 @@ AUTHOR = 'Fábio Fortkamp'
 SITENAME = 'thermocode'
 SITEURL = ''
 
+FAVICON = ''
+
+USE_FOLDER_AS_CATEGORY = False
+DEFAULT_CATEGORY = 'Article'
+
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
+
+DEFAULT_METADATA = {'status': 'draft',}
+
+IGNORE_FILES = ['.#*', "*~"]
+
 PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
@@ -19,17 +30,21 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+ARTICLE_URL = 'blog/{slug}'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+
+PAGE_URL = 'pages/{slug}'
+PAGE_SAVE_AS = 'pages/{slug}.html'
+
+CATEGORY_URL = 'blog/category/{slug}'
+CATEGORY_SAVE_AS = 'blog/category/{slug}.html'
+
+TAG_URL = 'blog/tag/{slug}'
+TAG_SAVE_AS = 'blog/tag/{slug}.html'
+
+THEME = 'pelican-bootstrap3/'
