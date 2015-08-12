@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Fábio Fortkamp'
-SITENAME = 'thermocode'
+SITENAME = 'thermocode.net'
 SITEURL = ''
 
 FAVICON = ''
@@ -57,4 +57,5 @@ SOCIAL = (('@fabiofortkamp', 'http://twitter.com/fabiofortkamp', 'twitter'),
 
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_SIDEBAR = True
+
 
