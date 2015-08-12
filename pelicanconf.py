@@ -6,6 +6,8 @@ AUTHOR = 'Fábio Fortkamp'
 SITENAME = 'thermocode.net'
 SITEURL = ''
 
+TYPOGRIFY = True 
+
 FAVICON = ''
 
 USE_FOLDER_AS_CATEGORY = False
