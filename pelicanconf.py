@@ -10,6 +10,8 @@ TYPOGRIFY = True
 
 FAVICON = ''
 
+
+
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'Article'
 
@@ -18,6 +20,8 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_METADATA = {'status': 'draft',}
 
 IGNORE_FILES = ['.#*', "*~"]
+
+SHOW_ARTICLE_CATEGORY = True
 
 PATH = 'content'
 
