@@ -42,16 +42,16 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 ARTICLE_URL = 'blog/{slug}'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 PAGE_URL = 'pages/{slug}'
-PAGE_SAVE_AS = 'pages/{slug}.html'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 CATEGORY_URL = 'blog/category/{slug}'
-CATEGORY_SAVE_AS = 'blog/category/{slug}.html'
+CATEGORY_SAVE_AS = 'blog/category/{slug}/index.html'
 
 TAG_URL = 'blog/tag/{slug}'
-TAG_SAVE_AS = 'blog/tag/{slug}.html'
+TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
 
 THEME = 'pelican-bootstrap3/'
 
