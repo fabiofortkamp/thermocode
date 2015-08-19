@@ -8,7 +8,7 @@ This setup assumes Python 3 and the [miniconda](http://conda.pydata.org/docs/) s
 
 And then
 
-	source activate blog
+	source activate thermocode
 
 ## The content folder
 
