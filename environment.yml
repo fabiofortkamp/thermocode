@@ -9,7 +9,6 @@ dependencies:
 - pip=7.1.0=py27_1
 - pycrypto=2.6.1=py27_0
 - python=2.7.10=0
-- python.app=1.2=py27_4
 - readline=6.2=2
 - setuptools=18.1=py27_0
 - sqlite=3.8.4.1=1
