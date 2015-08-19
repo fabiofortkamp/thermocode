@@ -5,4 +5,3 @@ themes/
 *.pid
 content
 __pycache__/
-publishconf.py
