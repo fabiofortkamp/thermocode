@@ -16,6 +16,7 @@ USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'Article'
 
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
+DEFAULT_DATE = 'fs'
 
 DEFAULT_METADATA = {'status': 'draft',}
 
