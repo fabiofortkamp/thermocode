@@ -45,8 +45,8 @@ DEFAULT_PAGINATION = False
 ARTICLE_URL = 'blog/{slug}'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
-PAGE_URL = 'pages/{slug}'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 CATEGORY_URL = 'blog/category/{slug}'
 CATEGORY_SAVE_AS = 'blog/category/{slug}/index.html'
