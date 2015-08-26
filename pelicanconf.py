@@ -67,3 +67,22 @@ DISPLAY_CATEGORIES_ON_SIDEBAR = True
 
 # Creative commons license
 CC_LICENSE = "CC-BY-NC"
+
+# Attach draft status to future posts]
+WITH_FUTURE_DATE = False
+
+# ---
+# Plugins
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ["series"]
+
+## Series
+
+SERIES_TEXT = "Part %(index)s of a series on %(name)s"
+
+# show series under the title
+SHOW_SERIES = False
+
+# show series on the sidebar
+DISPLAY_SERIES_ON_SIDEBAR = True
