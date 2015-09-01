@@ -18,7 +18,7 @@ DEFAULT_CATEGORY = 'Article'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_DATE = 'fs'
 
-DEFAULT_METADATA = {'status': 'draft',}
+DEFAULT_METADATA = {'status': 'published',}
 
 IGNORE_FILES = ['.#*', "*~"]
 
