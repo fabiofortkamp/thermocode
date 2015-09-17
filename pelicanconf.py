@@ -86,3 +86,6 @@ SHOW_SERIES = False
 
 # show series on the sidebar
 DISPLAY_SERIES_ON_SIDEBAR = True
+
+# Static settings
+STATIC_PATHS = ['images']
