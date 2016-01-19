@@ -56,6 +56,8 @@ TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
 
 THEME = 'pelican-bootstrap3/'
 
+BOOTSTRAP_THEME = 'spacelab'
+
 DISPLAY_CATEGORIES_ON_MENU = False
 
 SOCIAL = (('@fabiofortkamp', 'http://twitter.com/fabiofortkamp', 'twitter'),
@@ -75,7 +77,7 @@ WITH_FUTURE_DATE = False
 # Plugins
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ["series"]
+PLUGINS = ["series", "render_math"]
 
 ## Series
 
@@ -88,4 +90,13 @@ SHOW_SERIES = False
 DISPLAY_SERIES_ON_SIDEBAR = True
 
 # Static settings
-STATIC_PATHS = ['images']
+
+CUSTOM_CSS = 'static/custom.css'
+
+# Tell Pelican to add 'extra/custom.css' to the output dir
+STATIC_PATHS = ['images', 'extra/custom.css']
+
+# Tell Pelican to change the path to 'static/custom.css' in the output dir
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/custom.css'}
+}
