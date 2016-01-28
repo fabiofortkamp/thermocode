@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=gibbs
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_USER=fabiofortkamp
+SSH_TARGET_DIR=/var/www/thermocode.net/public_html
 
 S3_BUCKET=my_s3_bucket
 
