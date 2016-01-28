@@ -1,6 +1,6 @@
 Title: Using the terminal  
 Author: Fábio Fortkamp  
-Date:   
+Date: 2016-01-27  
 Category: Article  
 Tags: jupyter, terminal, unix, terminal  
 Slug: terminal  
