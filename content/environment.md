@@ -1,6 +1,6 @@
 Title: The PATH environemnt variable in Windows  
 Author: Fábio Fortkamp
-Date: 2015-03-01  
+Date: 2016-03-01  
 Category: Article  
 Tags: unix, windows  
 Slug: path  
