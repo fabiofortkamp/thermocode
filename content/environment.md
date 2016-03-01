@@ -1,10 +1,10 @@
 Title: The PATH environemnt variable in Windows  
 Author: Fábio Fortkamp
-Date:
+Date: 2015-03-01  
 Category: Article  
 Tags: unix, windows  
 Slug: path  
-Status:
+Status: published  
 Series: Jupyter notebooks  
 
 If you are one of the people who read this blog, you may have noticed that a recent obsession of mine is the mixing of Unix and Windows. As I've said a couple of times, I've been moving from an Apple-only system to a more diverse environment (primarily due to portability and cost reasons); today, my main use case is Windows as the "PC" system  and Android as the "mobile". However, in this move I've been bringing my Unix experience from my Mac years (and Linux before that) to try to enhance the use of Windows for programming and scientific computing, and I've been surprising myself with the results. Expect this to become a regular theme here.
