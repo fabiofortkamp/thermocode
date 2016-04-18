@@ -5,7 +5,7 @@ Category: Article
 Tags: jupyter, programming, work  
 Slug: open  
 Status: published  
-Series: Jupyter notebooks  
+Series: Scientific programming in Windows  
 
 There is one aspect of working with [Jupyter](http://jupyter.org/) notebooks, which I began to explain [in the last post](http://thermocode.net/blog/jupyter/), that I want to emphasize. It's a work philosophy that I've been developing in the past months (with ideas from many people), and which I call *being open while private*.
 
