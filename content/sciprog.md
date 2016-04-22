@@ -5,7 +5,7 @@ Category: Article
 Tags: programming, python, Jupyter, Windows, Unix  
 Slug: sciprog  
 Status: published  
-Series: Scientific programming in Windows  
+Series: Scientific Programming in Windows  
 
 When I [started][jupyter-first] this series on [Jupyter][jupyter-site] notebooks, I wrote it was "my most used tool" and that I think its installation and usage for Windows users may not be very straigthforward.
 
