@@ -5,7 +5,7 @@ Category: Article
 Tags: jupyter, python, programming, latex  
 Slug: jupyter  
 Status: published  
-Series: Jupyter notebooks  
+Series: Scientific programming in Windows  
 
 Without a doubt, [Jupyter notebooks](http://jupyter.org/ ) 
  are my must used and most powerful work tool at this moment in my Ph.D. work. This technology revolutionized the way I write code and solve  mathematical problems, in a way that helps me think and is "pleasant" to read (to the extent where reading equations can be pleasant).
