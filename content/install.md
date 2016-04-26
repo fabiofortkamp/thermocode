@@ -47,6 +47,15 @@ For serious work with Python, there's an enhanced shell called IPython, which is
 
 The Python shell is a process launched by whatever shell you are using to type `python`; I'll assume it's bash. When you launch `python`, the interpreter is using as working directory the directory where it's lanuched from. To execute a script called `calculate.py` located in `~/code/python-script`, then, you can either type `python ~/code/python-scripts/calculate.py` or navigate to that directory and running `python calculate.py`.
 
+To emphasize one more time the fact that Python fundamentally executes a line of code, you can simply type `python -c 'print("Hello, world!")'` and the string between `''` will be executed.
+
+To extend Python, you install *packages*, which are loaded into the shell with `import <package name>`. One advantage of Python (compared to other programming languages) is that it has a *batteries included* philosophy, meaning that the Python interpreter ships with lots of built-in packages. One advantage of the Anaconda system (over the conventional Python installation) is that is also includes many third-party packages that are much used in scientific computing. Hence, with the official Python installer, if you type something like `import numpy`, you will get an error saying the numpy library cannot be found. However, if you followed the steps here and installed Anaconda, this statement should work out-of-the-box.
+
+The regular Python system has the notion of an environment variable `PYTHONPATH`, which can be a list of directories that include python packages. Hence, if you would like to use some obscure Python package that you download, you can then modify the shell (I'll not dive into this) to include the directory to where you downloaded the package, and from the same shell launch the python interpreter; it will inherit the environment variables and then, when you try to import your obscure package from your location, Python will know where to find it.
+
+An aside: I'm serious when I said that Python knows everyhing about the shell from where you lanched {Explicar como acessar variáveis de ambiente}
+
+Because Python is open-source, it can be modified and distributed, which means that the Anaconda version of Python works in a different way (this only affects the mechanics, though == the programming language itself is identical).
 
 
 ## Using LaTeX on Windows
