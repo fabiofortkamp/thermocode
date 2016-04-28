@@ -55,7 +55,33 @@ The regular Python system has the notion of an environment variable `PYTHONPATH`
 
 An aside: I'm serious when I said that Python knows everyhing about the shell from where you lanched {Explicar como acessar variáveis de ambiente}
 
-Because Python is open-source, it can be modified and distributed, which means that the Anaconda version of Python works in a different way (this only affects the mechanics, though == the programming language itself is identical).
+Because Python is open-source, it can be modified and distributed, which means that the Anaconda version of Python works in a different way (this only affects the mechanics, though  the programming language itself is identical). Because of that, the only reliable way of installing packages in Anaconda Python is to explicitly install it with a *package manager*. The Anaconda system provides one excellent called conda. To install a package that is not included in the Anaconda distribution, you can type:
 
+	```bash
+	$ conda install docopt # docopt is a library for command line programs that is not included
+	```
+
+The `conda` program can be used to installed actually many programs, not just python libraries. Dive into the documentation for more details. A nice touch: you try to install something it does not recognize, it shows a help message indicating what you can do to search for what you want to install.
+
+The Anaconda system also includes the official Python package manager, pip. And again, because of the open source nature of things, the Anaconda version of pip knows what to do to make the package importable for the Anaconda version of Python. To install something via `pip`, type:
+
+	```bash
+	$ pip install pelican
+	```
+
+Please be aware of the "linking" between programs. You can have several versions of python installed, which it own pip version. Becuase of how different distributions organize their system files, when you install something via pip, it will know where to put the installation files, but they are not acessible. For example, if you install something using the Anaconda pip, but then launch the official Python shell, it may not be able to import something you just installed, because it was placed in a different location! To avoid headaches like this, first and foremost aim for simplicity: try to use the Anaconda system exclusively, and only one version (2 or 3), and check to see if the Anaconda path is placed in the front of other Python paths. In bash, you can also type like this:
+
+	```bash
+	$ which python
+	$ which pip
+	```
+
+The `which` command will try to find where in the `$PATH$` these commands are placed. If the output of these commands are similimar (e.g. they are placed in subdirectories of a `Anaconda3` folder), you should not have any problems.
+
+Also keep in mind that `pip` is a Python package manager, while conda is very general. But because `pip` is the standard (to be used by any Python distribution), you may find something that is not available via `conda` that is via `pip`; that's fine. From a package installable via `pip` to be installable via `conda`, a *conda recipe* has to be created for each platform, and that's why you may not find a specific library (or only an older verion, or only for a different OS) in the Anaconda index. To be consistent, I try to first install using the conda manager, and fall back to pip if I can't find. I haven't had any problems with that. I have yet to explore the power of conda to install other Windows utilities.
+
+Speaking of conda recipes, that's how you can install your own libraries. Hopefully, after a few years of Python, you will begin to create your own functions, and will grow them into packages, that you want to import like any other library. I'm still learning and experimenting in that real, and in the future I may post a tutorial in creating your own recipes; for now you can research the documentation. If you are just starting with Python, you shouldn't worry about this.
+
+**To summarize:** the Python programming language is accessed via a Python interpreter, which primarily takes a line of Python code and executes them. To run a Python program is to call the python interpreter to execute the file line by line. To use the shell in interactive mode, ou need to install the interpreter. There's an official port of Python, but installing packages for scientific computing with that is difficult. Because Python is open source, there are different distributions that include some extra features (without modifying the programming language). For scientific computing, the best one is Anaconda, which already includes popular languages. It includes the pip and conda tools to install external libraries, and conda recipes can be used to transform your own files into importable packages. 
 
 ## Using LaTeX on Windows
