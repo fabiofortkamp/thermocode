@@ -85,3 +85,31 @@ Speaking of conda recipes, that's how you can install your own libraries. Hopefu
 **To summarize:** the Python programming language is accessed via a Python interpreter, which primarily takes a line of Python code and executes them. To run a Python program is to call the python interpreter to execute the file line by line. To use the shell in interactive mode, ou need to install the interpreter. There's an official port of Python, but installing packages for scientific computing with that is difficult. Because Python is open source, there are different distributions that include some extra features (without modifying the programming language). For scientific computing, the best one is Anaconda, which already includes popular languages. It includes the pip and conda tools to install external libraries, and conda recipes can be used to transform your own files into importable packages. 
 
 ## Using LaTeX on Windows
+
+LaTeX isn't a traditional programming language such as Python (or is it), but I've found that with experience treating writing in LaTeX as writing a program makes me a better writer.
+
+LaTeX is a system for preparing documents. Instead of using a traditional word processor, you write your documents in a plain-text file and embed commands in it. The basic principle of working with this (and the one that I think is most difficult for people familiar to use Microsoft Word) is this *separation of input from output*. The file you work on is not the file that you will send to others as a final product; the latter has to be *compiled* from the former.
+
+I will assume that what you want is to create a PDF document that you send to your boss, professor, advidor etc; for that you need a command-line program called `pdflatex`. As with Python, there are several distributions of the TeX/LaTeX family. In Windows, MikTeX is popular, but because I've used Linux, OS X and Windows at different stages of my professional life, I like to use TeX Live becuase it's cross-plaftorm. So the instructions I use here will assume the use of TeX Live, which you can download and install like any Windows program here. Warning: it's a long installation process; LaTeX is complex.
+
+The intallation process should adjust your `$PATH$` automatically. To test, type in bash:
+
+	```shell
+	$ which pdflatex
+	```
+
+If the TeX Live directory appears in the output, you are fine, otherwise add the appropriate directory to your `$PATH`. For a default installation, the directory where the executables are located is something like `C:\texlive\<year>\bin\win32`.
+
+Let's say you are writing a report. You create a document called `report.tex` in a folder; to create the PDF version, you type:
+
+	```shell
+	$ pdflatex report
+	```
+
+If there are no errors, a new file `report.pdf` should be created in the same directory. This is the basics mechanics of using LaTeX.
+
+Unlike Python, there is no "LaTeX shell" for interactive shell. If you type just `pdflatex`, you get a `**` prompt that just waits for you to type the name of the file you want to compile, but you can't do much more than that.
+
+`pdflatex` is just this: a program that takes a file and creates another. Due to the power of the command line, you can configure this process; type `pdflatex --help` to see available options, and go crazy.
+
+{ falar de configurar editores. Exemplo com algum editor? O que eu poderia querer modificar? Mudar o índice}
