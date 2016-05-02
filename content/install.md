@@ -112,4 +112,36 @@ Unlike Python, there is no "LaTeX shell" for interactive shell. If you type just
 
 `pdflatex` is just this: a program that takes a file and creates another. Due to the power of the command line, you can configure this process; type `pdflatex --help` to see available options, and go crazy.
 
-{ falar de configurar editores. Exemplo com algum editor? O que eu poderia querer modificar? Mudar o índice}
+As a practical example of what the knowledge of this command line can do to you, let's think about the problem of compiling a list of symbols in your scientific paper -- a quite common task, should I say. One advantage of using LaTeX is that includes an ecosystme of related programs that can analyze your `.tex` file and process them in some way. One program that does that is `makeindex`, which parses your source file, look for special words in it, and then output a second file, with a list of all of the "special words" it found and the page where they were found. Now, if you run `pdflatex` again, it will read this table and put it into your document.
+
+The `makeindex` is very general and can sort any sort of index. One application is using the `nomencl` package, suited to creat our list of symbols. When writing your text, right after an equation or a paragraph describing a variable, you create a line starting with `\nomenclature` (I won't go into the specific syntax; if you are interested, check the documentation). To make `makeindex` understand that `\nomenclature` is one of the "special words" it should be looking for, you should run a command like that (assuming you are writing `paper.tex`):
+
+	```shell
+	makeindex -s nomencl.ist -o paper.nls paper.nlo
+	```
+
+Now let's look of how to modify a sample LaTeX IDE to that; I'll use TeXStudio as an example. If go to the *Options/Configure TeXStudio...* menu, and go the *Commands* tab, you get the following dialog:
+
+IMAGEM TEXSTUDIO
+
+To modify the `makeindex` behavior to use the `nomencl` package, then modify the line:
+
+	```shell
+	makeindex.exe %.idx
+	```
+
+To:
+
+	```shell
+	makeindex -s nomencl.ist -o %.nls %.nlo
+	```
+
+You can see at the top of the dialog that `%` is used to mark the filename without extension. Therefore, you are writing a paper in TeXStudio and run the build command, it will run `makeindex` in that configuration, the program will take the name of your file, replace it into the `%` characters in the above command and pass that command to the shell, which will execute it; presumably TeXStudio will run LaTeX again and the index will be inserted.
+
+Hence, a LaTeX editor is just an interface. You could just use a text editor, like Emacs, Vim, Atom, Notepad++, Sublime Text etc, to write your documents, and compile from the command line. There's no black box, no magic, binary document format. It is just a text file (like a `.txt` file), that you feed into some programs that output other files, and in the end you have a PDF document.
+
+OK, enough about running LaTeX as a program. 
+INSTALAR EXTENSÕES
+
+CRIAR EXTENSÔES. TEXMF.
+
