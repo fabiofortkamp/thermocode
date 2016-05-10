@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Fábio Fortkamp'
 SITENAME = 'thermocode.net'
 SITEURL = ''
+SITESUBTITLE = 'The research blog of ' + AUTHOR
 
 TYPOGRIFY = True 
 
