@@ -1,11 +1,11 @@
-Title: Scientific programming in Windows  
+Title: Scientific computing in Windows  
 Author: Fábio Fortkamp  
 Date: 2016-04-18  
 Category: Article  
 Tags: programming, python, Jupyter, Windows, Unix  
 Slug: sciprog  
 Status: published  
-Series: Scientific Programming in Windows  
+Series: Scientific Computing in Windows  
 
 When I [started][jupyter-first] this series on [Jupyter][jupyter-site] notebooks, I wrote it was "my most used tool" and that I think its installation and usage for Windows users may not be very straigthforward.
 
@@ -21,7 +21,7 @@ Jupyter does not work that way and does not fit well into Windows culture. Yes, 
 
 Now, however, I noticed that this whole discussion is not about Jupyter notebook. It's about those things I've talked about, about learning to use the terminal, to acknowledge the power of plain text files, and how to modify command line programs. It's about the Python programming language in general, in how it can be a perfect substitute to MATLAB (as [I've talked about][unix-post]) to manipulate numerical data. It's about engineers and scientists who use computers not as administrative tools (to just fill spreadsheets), but who write programs for computers -- but not any kind of program, rather programs that manipulate data, generate plots, perform bulk manipulation of files. To do science, in other words.
 
-Because of that, I'm converting this series on Jupyter notebooks to the broader topic of *Scientific Programming in Windows*, a topic for which I have great interest, and a topic which has been in the news lately -- have you seen that [Windows 10 will have a Linux subsystem *built in*][wls], just so that users can interact with a command line in a more proper way?
+Because of that, I'm converting this series on Jupyter notebooks to the broader topic of *Scientific Computing in Windows*, a topic for which I have great interest, and a topic which has been in the news lately -- have you seen that [Windows 10 will have a Linux subsystem *built in*][wls], just so that users can interact with a command line in a more proper way?
 
 I do this kind of work every day. I use Python to write little scripts, I use Jupyter as an alternative interface to Python, I write in LaTeX, I've been using some neat bash scripts. I've been learning to be efficient with scientific programming in Windows, and I want to share my ideas with you. Stay tuned!
 
@@ -30,4 +30,5 @@ I do this kind of work every day. I use Python to write little scripts, I use Ju
 [terminal-post]: http://thermocode.net/blog/terminal  
 [unix-post]: http://thermocode.net/blog/unix  
 [wls]: https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/  
-[path-post]: http://thermocode.net/blog/path/  
+[path-post]: http://thermocode.net/blog/path/
+[python-win]: https://www.python.org/downloads/windows/  

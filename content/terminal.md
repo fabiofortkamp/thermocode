@@ -5,7 +5,7 @@ Category: Article
 Tags: jupyter, terminal, unix, terminal  
 Slug: terminal  
 Status: published  
-Series: Scientific Programming in Windows  
+Series: Scientific Computing in Windows  
 
 Before we dive into using Jupyter notebooks, I feel obligated to better clarify the terminal. Currently, the only way to use notebooks is via the command line, and I've observed that even engineers with broad experience in programming have no idea what the terminal is, being mostly experienced with IDE-like programs (like MATLAB, or Visual Studio, or most LaTeX editors). To assure everyone interested in running Jupyter notebooks understand what I'm saying, I will try to give a crash course in using the command line.
 
@@ -62,7 +62,7 @@ The more complete is [Cygwin](https://www.cygwin.com/), which is a collection of
 
 The problem I got with Cygwin was when trying to  use Git. Git is a version control system, which I will not cover here in this post --  just keep in mind that it's a command-line program that keeps track of changes in your projects, both on your local machine and on a remote repository (like [GitHub](https://github.com/),  mentioned in the [last post](http://thermocode.net/blog/open/)). When I'm satisfied with my work and want to *push* the project's version on my machine to the remote server, this happens through a HTTPS protocol, which requires some authentication. When using Cygwin, I got all sorts of issues, and some internet searches  showed that sometimes using this secure connection with Git and Cygwin can be in fact a mess.
 
-Fortunately, there is a project called [Git for Windows](https://git-for-windows.github.io/), which takes care of this. When you install it, it configures a Windows-native Git system for you, and a basic but functional bash shell is included with all Git hooks. When using Git for the first time, I had to type my password, and after that I never had any issues. I'm *very* happy with it.
+Fortunately, there is a project called [Git for Windows](https://git-for-windows.github.io/), which takes care of this. When you install it, it configures a Windows-native Git system for you, and a basic but functional bash shell is included with all Git hooks. When using Git for the first time, I had to type my password, and after that I have never had any issues. I'm *very* happy with it.
 
 When you install Git for Windows, make sure to make it a complete installation, choosing to install all Unix utilities and adding them to the PATH. After that, a `Git Bash` program should be available in your Start menu. This is the shell with which you can use a mini-Unix environment in Windows. As we'll see, the easiest way to use Jupyter on Windows is to use a combination of both bash and `cmd.exe`.
 
