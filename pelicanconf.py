@@ -4,13 +4,16 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Fábio Fortkamp'
 SITENAME = 'thermocode.net'
+
 SITEURL = ''
+SITESUBTITLE = 'The research blog of ' + AUTHOR
 
 TYPOGRIFY = True 
 
 FAVICON = ''
 
-
+BANNER = True
+BANNER_ALL_PAGES = True
 
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'Article'

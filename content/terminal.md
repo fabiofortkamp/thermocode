@@ -5,7 +5,7 @@ Category: Article
 Tags: jupyter, terminal, unix, terminal  
 Slug: terminal  
 Status: published  
-Series: Scientific programming in Windows  
+Series: Scientific Programming in Windows  
 
 Before we dive into using Jupyter notebooks, I feel obligated to better clarify the terminal. Currently, the only way to use notebooks is via the command line, and I've observed that even engineers with broad experience in programming have no idea what the terminal is, being mostly experienced with IDE-like programs (like MATLAB, or Visual Studio, or most LaTeX editors). To assure everyone interested in running Jupyter notebooks understand what I'm saying, I will try to give a crash course in using the command line.
 
