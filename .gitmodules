@@ -1,7 +1,8 @@
 [submodule "pelican-bootstrap3"]
 	path = pelican-bootstrap3
 	url = https://github.com/fabiofortkamp/pelican-bootstrap3.git
-	branch = dev
+	branch = master
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/getpelican/pelican-plugins
+	branch = master
